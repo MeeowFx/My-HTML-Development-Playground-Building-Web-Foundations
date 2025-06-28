@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        table,
+        tr,
+        td,
+        th,
+        caption {
+            border: 1px solid #eee;
+            border-collapse: collapse;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tables In HTML</h1>
+        <p><em>Tables</em> are used to display data in a structured format,considering rows and columns.
+            Lets add a table to this web page, tables <mark>structure tabular data</mark> in a grid format, making it
+            easy to read and analyze information.
+            Table only takes the required space like any other inline element, but it can be styled to take up more
+            space if needed.</p>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>My WEB DEV Schedule</h2>
+            <br>
+
+            <table>
+                <caption>My Daily Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>&nsbp;</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td>
+                            <time datetime="08:00">8am</time> -
+                            <time datetime="09:00">9am</time>
+                        </td>
+                        <td>Write Code</td>
+
+                    </tr>
+                    <tr>
+                         <th scope="row">Morning</th>
+                        <td>
+                            <time datetime="09:00">9am</time> -
+                            <time datetime="10:00">10am</time>
+                        </td>
+                        <td>Practise HTML</td>
+                    </tr>
+                    <tr>
+                         <th scope="row">Afternoon</th>
+                        <td>
+                            <time datetime="14:00">2pm</time> -
+                            <time datetime="17:00">5pm</time>
+                        </td>
+                        <td>Study For Other Courses </td>
+                    </tr>
+                    <tr>
+                         <th scope="row">Evening</th>
+                        <td rowspan="2">All Other Times</td>
+                        <td>Free Time</td>
+                    </tr>
+                    <tr>
+                         <th scope="row">Night</th>
+                        <td>Sleep</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Hours: 24</td>
+                    </tr>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
