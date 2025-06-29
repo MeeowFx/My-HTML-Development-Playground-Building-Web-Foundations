@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: #333;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        html {
+            font-family: poppins;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Forms and Inputs</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li>
+                    <a href="#forms">Forms</a>
+                </li>
+
+                <li>
+                    <a href="#inputs">Inputs</a>
+                </li>
+
+                <li><a href="#contact">Contact me</a></li>
+
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section id="forms">
+                <h2>Forms</h2>
+                <p><strong>Forms</strong> are used to collect user input in web applications. They can include various
+                    types
+                    of input fields
+                    such as text boxes, checkboxes, radio buttons, and dropdowns.</p>
+            </section>
+            <section id="inputs">
+                <h2>Inputs</h2>
+                <p><strong>Inputs</strong> are the individual fields within a form where users can enter data. They can
+                    be
+                    of different
+                    types,
+                    such as text, password, email, number, etc.</p>
+                </h1>
+            </section>
+        </article>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear form you</p>
+
+            <form action="https://httpbin.ord/get" method="get">
+                <div>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" name="firstName" id="firstName" placeholder=" first name" autocomplete="on"
+                        required autofocus>
+                </div>
+                <div>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" name="lastName" id="lastName" placeholder=" last name" autocomplete="on"
+                        required>
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder=" your secret password" required>
+                </div>
+                <div>
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone" placeholder=" 55555555555" pattern="[0-9]{4}[0-9]{7}" required>
+                </div>
+                <div>
+                    <label for="decade">Favourite Decade: </label>
+                    <input type="number" name="decade" id="decade" min="1920" max="2020" step="10" value="1990"
+                        placeholder=" 1990" required>
+                </div>
+
+
+            </form>
+
+        </article>
+
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; Meowfx <a href="https://github.com/MeeowFx">View Github</a></p>
+    </footer>
+</body>
+
+</html>
