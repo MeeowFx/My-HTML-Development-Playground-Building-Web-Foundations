@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Ahmad">
+    <meta name="description" content="A simple HTML page for testing and development processes.">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="img/chair.png" type="image/x-icon">
+
+    <style>
+        /* Only allowed CSS properties for font and color */
+        html {
+            font-family: calibri, sans-serif;
+            background-color: rgb(237, 220, 208);
+        }
+
+        .info {
+            /* ID is now used for coloring headings */
+            color: rgb(67, 2, 2);
+        }
+
+        a {
+            /* Applying color and text-decoration to all links */
+            color: rgb(238, 140, 41);
+            text-decoration: none;
+        }
+
+        a:hover {
+            /* Applying color, padding, and border-radius on hover */
+            color: rgb(246, 41, 5);
+            /* Padding and border-radius are allowed per your specific rule */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        table,
+        tr,
+        td,
+        th,
+        caption {
+
+            border: 1px solid #eee;
+            border-collapse: collapse;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0.5rem;
+        }
+
+                button {
+            background-color: rgb(218, 97, 32);
+            color: white;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        button:hover {
+            background-color: rgb(184, 46, 11);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <p>&nbsp;&nbsp;
+            <img src="img/chair.png" alt="Interior Designs Logo: A chair icon" title="Interior Designs" width="30px"
+                id="logo">
+            <strong> I N T E R I O R
+                &nbsp; DESIGNS</strong>
+        </p>
+        <hr>
+        <br>
+        <h1 class="info">
+            &nbsp;We are here to help you!
+        </h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;Feel free to reach out to us for any inquiries or
+            assistance.<em> Our Office Timings:</em></p>
+
+    </header>
+
+    <main>
+        <section id="WorkingHours">
+            <table>
+                <caption>Office Hours</caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+
+                    <tr>
+                        <td>Monday - Thursday</td>
+                        <td><time datetime="0.8:00">8AM</time> - <time datetime="18:00">6PM</time></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <strong>OFF</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td><time datetime="0.8:00">8AM</time> - <time datetime="14:00">2PM</time></td>
+                </thead>
+            </table>
+        </section>
+<br>
+        <section>
+            <h2 class="info">&nbsp;&nbsp;<u>Online Assistance</u></h2>
+            <p>&nbsp;&nbsp;&nbsp;We'd really like to help you.</p>
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend><strong>Personal Information</strong></legend>
+                    <br>
+                    <div>
+                        <label for="firstName"><span style="color: red;">*</span>FirstName: </label>
+                        <input type="text" name="firstName" id="firstName" placeholder=" Your F-Name" autocomplete="on"
+                            autofocus required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="lastName"><span style="color: rgb(243, 165, 88);">*</span>LastName: </label>
+                        <input type="text" name="lastName" id="lastName" placeholder=" Your L-Name" autocomplete="on"
+                            required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="phone"><span style="color: red;">*</span>Contact:&nbsp;&nbsp;&nbsp;</label>
+                        <input type="tel" name="phone" id="phone" placeholder=" XXXX-XXXXXXX" pattern="[0-9]{4}[0-9]{7}"
+                            required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="birthYear">
+                            Birth Year:&nbsp;
+                        </label>
+                        <input type="number" name="birthYear" id="birthYear" step="1" min="1970" max="2010"
+                            placeholder=" 1999">
+                    </div>
+                    <br>
+                </fieldset>
+                <br>
+                <hr>
+                <br>
+                <fieldset>
+                    <legend><strong>Preferences</strong></legend>
+                    <p><em>Your choice means a lot to us</em></p>
+                    <p>Your Design Preferences</p>
+                    <div>
+                        <input type="radio" name="design" id="modern" value="modern" checked>
+                        <label for="modern">Modern</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="radio" name="design" id="traditional" value="traditional">
+                        <label for="traditional">Traditional</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="radio" name="design" id="asthetic" value="asthetic">
+                        <label for="asthetic">Asthetic</label>
+
+                    </div>
+
+                    <br>
+                    <div>
+                        <input type="radio" name="design" id="other" value="other">
+                        <label for="other">Other</label>
+
+                    </div>
+                    <br>
+
+
+
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Send Us A Note</strong></legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" rows="5" cols="50" placeholder="Type your message here..."></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="post">Post</button>
+                    <button type="reset" onclick="alert('Thanks you for your psot!!')">Reset</button>
+
+            </form>
+        </section>
+
+    </main>
+<br>
+    <hr>
+    <footer>
+        <p>&nbsp;&nbsp;&copy;Interior Designs&nbsp;&nbsp;&nbsp;All Rights Reserved
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;For more information, visit our <a href="https://github.com/MeeowFx">Website</a>
+            or contact us at <a href="tel:03116941473">0300-0000000</a>.</p>
+            <address>
+            <strong>&nbsp;&nbsp;&nbsp;Address:</strong> 123 Design Street, Lahore, Pakistan<br>
+            </address>
+
+    </footer>
+</body>
+
+
+</html>
