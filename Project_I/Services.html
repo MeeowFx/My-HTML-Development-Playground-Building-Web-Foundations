@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Ahmad">
+    <meta name="description" content="A simple HTML page for testing and development processes.">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="icon" href="img/chair.png" type="image/x-icon">
+
+    <style>
+        /* Only allowed CSS properties for font and color */
+        html {
+            font-family: calibri, sans-serif;
+            background-color: rgb(237, 220, 208);
+        }
+
+        #info {
+            /* ID is now used for coloring headings */
+            color: rgb(67, 2, 2);
+        }
+
+        a {
+            /* Applying color and text-decoration to all links */
+            color: rgb(238, 140, 41);
+            text-decoration: none;
+        }
+
+        a:hover {
+            /* Applying color, padding, and border-radius on hover */
+            color: rgb(246, 41, 5);
+            /* Padding and border-radius are allowed per your specific rule */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #image {
+            /* ID is used for image styling */
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <p>&nbsp;&nbsp;
+            <img src="img/chair.png" alt="Interior Designs Logo: A chair icon" title="Interior Designs" width="30px"
+                id="logo">
+            <strong> I N T E R I O R
+                &nbsp; DESIGNS</strong>
+        </p>
+        <hr>
+        <br>
+
+        <h1 id="info">
+            &nbsp;&nbsp;&nbsp;&nbsp;Modern, Elegant and Luxurious Interior
+        </h1>
+
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Your Comfort __ Change The Game</p>
+
+        <figure id="image">
+            <img src="img/room.jpeg" alt="Modern Room" title="Prototype for Minimalist Interior Designs" loading="lazy"
+                width="600">
+
+            <figcaption><i>Our Prototype Design</i></figcaption>
+        </figure>
+
+        <nav aria-labelledby="Secondary Navigation">
+            <h2 id="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Explore Our Sections</u></h2>
+            <ul>
+
+                <li><a href="#services">Services</a></li><br>
+                <li><a href="Our Projects">Projects</a></li><br>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="Services">
+            <h2 id="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Services</h2>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We offer a wide range of interior design services to
+                cater to your needs, including:
+            </p>
+            <ul>
+                <li>Residential Interior Design</li>
+                <li>Commercial Interior Design</li>
+                <li>Space Planning and Layout</li>
+                <li>Color Consultation</li>
+                <li>Furniture Selection and Procurement</li>
+                <li>Custom Interior Solutions</li>
+                <li>And More...</li>
+            </ul>
+
+            <figure id="image">
+                <img src="img/services.png" alt="Interior Design Services" title="Our Services" loading="lazy"
+                    width="600">
+                <figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Our Services</i></figcaption>
+            </figure>
+
+        </article>
+
+        <br>
+        <article id="Our Projects">
+            <h2 id="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Projects</h2>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We take pride in our work and have completed numerous
+                projects that showcase <em>our expertise and creativity</em>. Here are some of our recent projects:
+            </p>
+            <ul>
+                <li>Modern Apartment Renovation</li>
+                <li>Luxury Office Space Design</li>
+                <li>Cozy Café Interior Makeover</li>
+                <li>Elegant Restaurant Ambiance Creation</li>
+                <li>Contemporary Retail Store Design</li>
+            </ul>
+
+            <figure id="image">
+                <img src="img/projects.png" alt="Interior Design Projects" title="Our Projects" loading="lazy"
+                    width="600">
+                <figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Our Projects</i></figcaption>
+            </figure>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;Interior Designs&nbsp;&nbsp;&nbsp;All Rights Reserved
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For more information, visit our <a href="index.html">Home
+                Page</a>
+            or contact us at <a href="Contact.html">Contact Us</a>.</p>
+
+    </footer>
+</body>
+
+
+</html>
